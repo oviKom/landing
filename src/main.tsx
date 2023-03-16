@@ -5,6 +5,6 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <React.StrictMode>
-        <div className={'bg-blue-200 w-screen h-screen'}>{'text'}</div>
+        <div className={'bg-gray-200 w-screen h-screen'}>{'land'}</div>
     </React.StrictMode>
 );
