@@ -8,7 +8,7 @@
 ***
 <div id="user-content-toc">
   <ul>
-    <summary><h1 style="display: inline-block;">React TS with Vite</h1></summary>
+    <summary><h1 style="display: inline-block;">oviKom landing oldal</h1></summary>
   </ul>
 </div> 
 
