@@ -1,5 +1,5 @@
 import { ReactElement } from "react"
-import Header from "../layout/Header"
+import Button from "../Button"
 
 const Index: React.FC = (): ReactElement => {
     return (
@@ -17,6 +17,7 @@ const Index: React.FC = (): ReactElement => {
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore asperiores ipsum vitae ea, mollitia rem. Aperiam, quam animi maxime possimus architecto quibusdam, dolore quidem ullam accusamus atque culpa rem suscipit?
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic perferendis eveniet ullam ipsum nostrum, est dolore iusto error animi corporis fuga delectus maiores impedit officiis, asperiores in fugiat necessitatibus tempora.
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum minima aliquid voluptatum ex, magni quod optio ut delectus distinctio quos quas sit! Voluptas possimus pariatur, maxime earum ipsa fuga.
+            <Button text={'text'} />
         </div>
     )
 }
