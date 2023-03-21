@@ -4,7 +4,7 @@ import Header from "./Header";
 
 const Layout: React.FC = (): ReactElement => {
     return (
-        <div>
+        <div className={'page-wrapper'}>
             <Header />
             <Outlet />
         </div>
