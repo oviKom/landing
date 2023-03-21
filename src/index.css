@@ -1,3 +1,16 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/*CUSTOM STYLES*/
+@import '../src/assets/css/navbar.css';
+
+.page-wrapper {
+    transition: all 400ms ease-in-out;
+
+    @apply px-5 md:px-24 lg:px-44 xl:px-64 2xl:px-[350px] w-screen min-h-fit bg-white;
+}
+
+.header {
+    @apply pt-10;
+}
