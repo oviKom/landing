@@ -1,19 +1,19 @@
 import { ReactElement } from "react";
-import { Outlet } from "react-router-dom";
 
 const Header: React.FC = (): ReactElement => {
     return (
-        <div>
+        <div className={'bg-red-500 flex flex-row justify-between items-center header'}>
             <div>LOGO</div>
-            <nav>
-                <ul>
-                    <li className={'crumb'}><a href="#">Bikes</a></li>
-                    <li className={'crumb'}><a href="#">BMX</a></li>
-                    <li className={'crumb'}>Jump Bike 3000</li>
+            <nav className={'navbar-wrapper'}>
+                <ul className={'navbar'}>
+                    <li className={'navbar-item'}><a href="#">Célunk</a></li>
+                    <li className={'navbar-item'}><a href="#">Funkciók</a></li>
+                    <li className={'navbar-item'}>Rólunk</li>
+                    <li className={'navbar-item'}>Kapcsolat</li>
                 </ul>
             </nav>
             <div>
-                GOMBOk
+                GOMBOK
             </div>
         </div>
     );
