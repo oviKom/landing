@@ -1,11 +1,10 @@
-import React, { ReactElement } from 'react'
+import React, { ReactElement } from 'react';
 
 const Banner: React.FC = (): ReactElement => {
     return (
-        <div>
-            <img src={''} />
-
-        </div>
+        <div className={'h-screen w-full absolute top-0 left-0 z-10 bg-[url("")]'}>
+            asd
+        </div >
     )
 }
 
