@@ -4,11 +4,12 @@ import classNames from 'classnames';
 interface ButtonInterface {
     text: string,
     variant?: 'primary' | 'white',
-    size?: 'fixed' | 'wrap'
+    size?: 'fixed' | 'wrap',
+    onClick?: Function | undefined
 }
 
 const Button: React.FC<ButtonInterface> = ({
-    text, variant = 'primary', size = 'fixed'
+    text, variant = 'primary', size = 'fixed', onClick
 }: ButtonInterface): ReactElement => {
     const className = classNames({
         'button': true,
@@ -17,7 +18,7 @@ const Button: React.FC<ButtonInterface> = ({
         'white': variant === 'white',
     });
     return (
-        <button type='button' className={className}>{text}</button>
+        <button type='button' className={className} onClick={() => onClick?.()} >{text}</button>
     )
 }
 
