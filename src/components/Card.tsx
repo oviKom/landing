@@ -21,6 +21,10 @@ const Card: React.FC<CardPropsInterface> = ({
         'text-black': variant === 'default',
         'text-white': variant === 'primary',
     });
+    const descriptionColor = classNames({
+        'text-card-purple ': variant === 'default',
+        'text-custom-gray': variant === 'primary',
+    });
     return (
         <div className={'inline-flex flex-col max-w-[350px] text-center place-self-center'}>
             {icon &&
@@ -32,7 +36,7 @@ const Card: React.FC<CardPropsInterface> = ({
             <div className={`text-[26px] font-bold mb-6 ${titleColor}`}>
                 {title}
             </div>
-            <div className={'text-card-purple font-semibold'}>
+            <div className={`${descriptionColor} font-semibold`}>
                 {description}
             </div>
         </div>
