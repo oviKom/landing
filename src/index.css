@@ -5,22 +5,20 @@
 /*CUSTOM STYLES*/
 @import '../src/assets/css/navbar.css';
 @import '../src/assets/css/button.css';
-
 /* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600&display=swap');
 
-
 .page-wrapper {
-    transition: all 400ms ease-in-out;
+    transition: all 400m s ease-in-out;
 
-    @apply font-body w-screen min-h-fit bg-white;
+    @apply font-body w-full h-full bg-white relative left-0;
 }
 
 .default-padding {
-    @apply px-5 md:px-24 lg:px-44 xl:px-56 2xl:px-[350px];
+    @apply px-5 md:px-24 lg:px-44 xl:px-56 2xl:px-[250px] 3xl:px-[300px] 4xl:px-[350px] 5xl:px-[550px] 6xl:px-[650px] 7xl:px-[800px] 8xl:px-[1000px];
 }
 
 .header {
-    @apply px-14 pt-10 flex flex-row justify-between items-center;
+    @apply pt-10 flex flex-row justify-between items-center z-20;
 }
