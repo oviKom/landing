@@ -7,8 +7,9 @@ const ChooseUs: React.FC = (): ReactElement => {
         <section className={'flex flex-col py-[72px] default-padding'}>
             <div className={'text-center flex flex-col justify-center items-center w-full'}>
                 <h2 className={'text-black text-[52px] font-bold mb-16'}>Miért minket válassz?</h2>
-
-                {SOLUTIONS.map(solution => <Card title={solution.title} description={solution.description} icon={solution.icon} variant={'primary'} />)}
+                <div className={'grid grid-cols-3 gap-6'}>
+                    {SOLUTIONS.map(solution => <Card title={solution.title} description={solution.description} icon={solution.icon} variant={'primary'} />)}
+                </div>
             </div>
         </section>
     )
