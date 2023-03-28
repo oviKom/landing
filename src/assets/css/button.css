@@ -1,9 +1,13 @@
 .button {
-    @apply rounded-100 flex justify-center items-center p-0 font-semibold;
+    @apply rounded-100 flex justify-center items-center p-0 font-semibold relative;
 }
 
 .button.size-fixed {
     @apply w-36 h-12 block;
+}
+
+.button.size-circle {
+    @apply min-w-[48px] min-h-[48px] p-1 block;
 }
 
 .button.primary {

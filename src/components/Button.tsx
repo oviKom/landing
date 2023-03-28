@@ -2,9 +2,9 @@ import React, { ReactElement } from 'react';
 import classNames from 'classnames';
 
 interface ButtonInterface {
-    text: string,
+    text: string | ReactElement,
     variant?: 'primary' | 'white',
-    size?: 'fixed' | 'wrap',
+    size?: 'fixed' | 'circle',
     onClick?: Function | undefined
 }
 
@@ -14,6 +14,7 @@ const Button: React.FC<ButtonInterface> = ({
     const className = classNames({
         'button': true,
         'size-fixed': size === 'fixed',
+        'size-circle': size === 'circle',
         'primary': variant === 'primary',
         'white': variant === 'white',
     });
