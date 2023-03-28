@@ -4,7 +4,7 @@ import Card from "../Card"
 
 const ChooseUs: React.FC = (): ReactElement => {
     return (
-        <section className={'flex flex-col py-[72px] default-padding'}>
+        <section className={'flex flex-col pt-[72px] pb-[144px] default-padding'}>
             <div className={'text-center flex flex-col justify-center items-center w-full'}>
                 <h2 className={'text-black text-[52px] font-bold mb-16'}>Miért minket válassz?</h2>
                 <div className={'grid grid-cols-3 gap-6'}>
