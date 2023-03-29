@@ -1,7 +1,9 @@
 import { ReactElement } from "react"
+import Footer from "../layout/Footer"
 import AboutUs from "../sections/AboutUs"
 import Banner from "../sections/Banner"
 import ChooseUs from "../sections/ChooseUs"
+import Contact from "../sections/Contact"
 import FullWidthBannerSeparator from "../sections/FullWidthBannerSeparator"
 import Functions from "../sections/Functions"
 import Goal from "../sections/Goal"
@@ -21,6 +23,8 @@ const Index: React.FC = (): ReactElement => {
                 image={bannerImage}
                 text={<span>Intézd a gyermek óvodai ügyeit,<br />pár kattintással bárhonnan.</span>}
             />
+            <Contact />
+            <Footer />
         </>
     )
 }

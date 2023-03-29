@@ -16,6 +16,9 @@ module.exports = {
                 card: {
                     gray: '#F2F4F8',
                     purple: '#B4A8F9'
+                },
+                footer: {
+                    gray: '#D7DCDE'
                 }
             },
             fontFamily: {

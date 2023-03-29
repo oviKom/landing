@@ -10,6 +10,10 @@
     @apply min-w-[48px] min-h-[48px] p-1 block;
 }
 
+.button.size-full {
+    @apply h-12 w-full;
+}
+
 .button.primary {
     @apply bg-primary text-white hover:bg-primary-hover;
 }
