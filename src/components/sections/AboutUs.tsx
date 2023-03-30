@@ -4,7 +4,7 @@ import { TEAM } from "../../conf/Team"
 const AboutUs: React.FC = (): ReactElement => {
     return (
         <>
-            <section className={'flex flex-col py-[72px] default-padding'}>
+            <section className={'flex flex-col py-[72px] default-padding'} id='about-us-section'>
                 <div className={'text-center flex flex-col justify-center items-center w-full'}>
                     <h2 className={'text-black text-[52px] font-bold mb-16'}>Csapatunk</h2>
                     <div className={'text-custom-gray font-semibold text-center'}>
