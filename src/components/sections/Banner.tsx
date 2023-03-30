@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import bannerImage from '../../../public/images/banner.webp';
+import bannerImage from '/images/banner.webp';
 
 const Banner: React.FC = (): ReactElement => {
     return (
