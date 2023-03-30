@@ -8,7 +8,7 @@ import TextArea from '../Textarea'
 
 const Contact: React.FC = (): ReactElement => {
     return (
-        <section className={'flex flex-col default-padding py-[144px] bg-primary'}>
+        <section className={'flex flex-col default-padding py-[144px] bg-primary'} id={'contact-section'}>
             <div className={'bg-white rounded-2xl flex flex-row p-24'}>
                 <div className={'w-[40%]'}>
                     <ContactSVG />
