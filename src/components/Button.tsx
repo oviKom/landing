@@ -4,25 +4,25 @@ import classNames from 'classnames';
 interface ButtonInterface {
     text: string | ReactElement,
     variant?: 'primary' | 'white',
-    size?: 'fixed' | 'circle' | 'full',
+    size?: 'fixed' | 'circle' | 'full' | 'wrap',
     onClick?: Function | undefined,
     className?: string,
+    disabled?: boolean
 
 }
 
 const Button: React.FC<ButtonInterface> = ({
-    text, variant = 'primary', size = 'fixed', onClick, className
+    text, variant = 'primary', size = 'fixed', onClick, className, disabled = false
 }: ButtonInterface): ReactElement => {
     const defaultClassName = classNames({
         'button': true,
-        'size-fixed': size === 'fixed',
-        'size-full': size === 'full',
-        'size-circle': size === 'circle',
+        [`size-${size}`]: size,
         'primary': variant === 'primary',
         'white': variant === 'white',
+        'disabled': disabled
     });
     return (
-        <button type='button' className={`${defaultClassName} ${className}`} onClick={() => onClick?.()} >{text}</button>
+        <button disabled={disabled} type='button' className={`${defaultClassName} ${className}`} onClick={() => onClick?.()} >{text}</button>
     )
 }
 
