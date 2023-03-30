@@ -7,7 +7,7 @@
 }
 
 .button.size-circle {
-    @apply min-w-[48px] min-h-[48px] p-1 block;
+    @apply min-w-[48px] min-h-[48px] max-w-[48px] max-h-[48px] p-1 block;
 }
 
 .button.size-full {
@@ -15,9 +15,13 @@
 }
 
 .button.primary {
-    @apply bg-primary text-white hover:bg-primary-hover;
+    @apply bg-primary text-white hover:bg-primary-hover disabled:bg-primary-hover;
 }
 
 .button.white {
-    @apply bg-white text-black hover:bg-gray-100;
+    @apply bg-white text-black hover:bg-gray-100 disabled:bg-gray-100;
+}
+
+.button.disabled {
+    @apply disabled:cursor-not-allowed;
 }
