@@ -17,7 +17,7 @@ const Goal: React.FC = (): ReactElement => {
                     officia deserunt mollit anim id est laborum.
                 </div>
             </div>
-            <div className={'grid grid-cols-2 gap-[24px] max-w-[528px] min-w-[50%] items-end'}>
+            <div className={'grid grid-cols-2 gap-[24px] max-w-[528px] items-end'}>
                 <img src={goalImage_1} />
                 <img src={goalImage_2} />
                 <img className={'col-span-2'} src={goalImage_3} />

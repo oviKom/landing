@@ -10,7 +10,7 @@ const Banner: React.FC = (): ReactElement => {
                 <h1 className={'text-[60px] font-bold text-center text-white leading-[68px] mb-6'}>
                     Pedagógus és <br />szülő közös platformja.
                 </h1>
-                <div className={'text-white max-w-[400px] text-lg font-semibold'}>
+                <div className={'text-white max-w-[400px] text-lg text-center'}>
                     A csoport ajtóra helyezett elavult cetlik kiváltása a technika adta lehetőségekkel.
                 </div>
             </div>
