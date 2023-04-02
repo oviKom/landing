@@ -7,7 +7,7 @@ const Banner: React.FC = (): ReactElement => {
             <img className={'w-full h-full object-cover absolute select-none'} src={bannerImage} />
 
             <div className={'relative w-full h-full flex flex-col justify-center items-center bg-black/50'}>
-                <h1 className={'text-[60px] font-bold text-center text-white leading-[68px] mb-6'}>
+                <h1 className={'text-[40px] md:text-[50px] lg:text-[60px] font-bold text-center text-white leading-[68px] mb-6'}>
                     Pedagógus és <br />szülő közös platformja.
                 </h1>
                 <div className={'text-white max-w-[400px] text-lg text-center'}>

@@ -6,10 +6,11 @@ interface CardPropsInterface {
     title: string,
     description: string,
     variant?: 'default' | 'primary'
+    className?: string | undefined | boolean
 }
 
 const Card: React.FC<CardPropsInterface> = ({
-    icon, title, description, variant = 'default'
+    icon, title, description, variant = 'default', className
 }: CardPropsInterface): ReactElement => {
     const titleColor = classNames({
         'text-card-gray': variant === 'default',
@@ -26,7 +27,7 @@ const Card: React.FC<CardPropsInterface> = ({
         'text-custom-gray': variant === 'primary',
     });
     return (
-        <div className={'inline-flex flex-col max-w-[350px] text-center place-self-center'}>
+        <div className={`inline-flex flex-col max-w-[400px] lg:max-w-[350px] text-center place-self-center ${className}`}>
             {icon &&
                 <div className={`${iconBackgroundClass} rounded-full w-14 h-14 flex justify-center items-center self-center mb-10`}>
                     {icon}

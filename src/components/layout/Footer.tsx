@@ -7,8 +7,8 @@ import Button from '../Button';
 const Footer: React.FC = (): ReactElement => {
     return (
         <section className={'relative w-full h-max bg-footer-gray'} id={'footer-section'}>
-            <footer className={'default-padding py-[130px] flex flex-row relative'}>
-                <div className={'w-[50%]'}>
+            <footer className={'default-padding py-[72px] xl:py-[130px] flex flex-col xl:flex-row relative'}>
+                <div className={'w-full xl:w-[50%]'}>
                     <h2 className={'text-[35px] font-bold'}>Kapcsolat</h2>
                     <div className={'flex flex-wrap'}>
                         {CONTACTS.map(contact =>
@@ -30,8 +30,9 @@ const Footer: React.FC = (): ReactElement => {
                         )}
                     </div>
                 </div>
-                <div className={'w-[50%]'}>
-                    <ul className={'flex flex-row text-black font-bold gap-24'}>
+                <hr className={'xl:hidden w-[95%] mx-auto my-10'} />
+                <div className={'w-full xl:w-[50%] pb-20'}>
+                    <ul className={'flex flex-col sm:flex-row text-black font-bold gap-10 xl:gap-24 justify-center'}>
                         <li>
                             <a href="#" onClick={(event) => scrollToSection(event, 'goal-section')}>Célunk</a>
                         </li>
