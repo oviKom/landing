@@ -51,7 +51,6 @@ Ha feltelepültek a függőségek akkor futtassuk a következő parancsot:
 npm run dev
 ```
 <br />
-<br />
 
 ***
 
@@ -62,7 +61,13 @@ npm run dev
 </div>
 Az alapvető code formatting függőségek mellett ezek az alapvető package-k vannak használatban:
 
-<br />
+- vite [4.1.0]
+- react [18.2.0]
+- typescript [4.9.3]
+- react router dom [6.9.0]
+- classnames [2.3.2]
+- tailwindcss [3.2.7]
+- @herocions/react [2.0.16]
 <br />
 
 ***
