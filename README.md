@@ -59,7 +59,7 @@ npm run dev
     <summary><h2 id="technologies" style="display: inline-block;">TECHNOLÓGIÁK 🧬</h2></summary>
   </ul>
 </div>
-Az alapvető code formatting függőségek mellett ezek az alapvető package-k vannak használatban:
+Az alapvető code formatting függőségek mellett ezek a package-k vannak használatban:
 
 - vite [4.1.0]
 - react [18.2.0]
