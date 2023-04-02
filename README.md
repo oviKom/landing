@@ -37,7 +37,19 @@ HSUP keretein belül készülő webes alapú alkalmazás könnyű bemutatására
     <summary><h2 id="installation" style="display: inline-block;">TELEPÍTÉS ⚙️</h2></summary>
   </ul>
 </div> 
-Idejön a telepítési útmutató.
+A telepítéshez szükséges NodeJS és NPM megléte, ajánlott node verzió <b>v18.15.0</b>.
+
+```
+git clone git@github.com:oviKom/landing.git
+cd landing
+npm i
+```
+
+Ha feltelepültek a függőségek akkor futtassuk a következő parancsot:
+
+```
+npm run dev
+```
 <br />
 <br />
 
@@ -48,7 +60,8 @@ Idejön a telepítési útmutató.
     <summary><h2 id="technologies" style="display: inline-block;">TECHNOLÓGIÁK 🧬</h2></summary>
   </ul>
 </div>
-Idejönnek a dependek.
+Az alapvető code formatting függőségek mellett ezek az alapvető package-k vannak használatban:
+
 <br />
 <br />
 
