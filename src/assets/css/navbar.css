@@ -1,7 +1,12 @@
-.navbar-wrapper {
-    @apply hidden lg:block;
-}
-
 .navbar {
     @apply flex flex-row gap-10 2xl:gap-16 text-white font-navbar z-20 font-semibold;
 }
+
+.mobile-navbar {
+    @apply flex flex-col justify-center items-center gap-12 text-black font-navbar z-20 font-semibold text-lg;
+}
+
+.mobile-navbar-wrapper {
+    @apply fixed top-0 right-0 bg-white w-[250px] h-screen z-30 shadow-2xl;
+}
+
