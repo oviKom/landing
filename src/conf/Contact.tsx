@@ -12,12 +12,7 @@ interface SocialsInterface {
 
 export const CONTACTS: ContactInterface[] = [
     {
-        email: 'gyurinadhazy@gmail.com',
-        socials: [
-            {
-                icon: <FacebookSVG />,
-                url: 'https://www.facebook.com/gyurinadhazy'
-            }
-        ]
+        email: 'hello@buborekom.hu',
+        socials: []
     }
 ];
