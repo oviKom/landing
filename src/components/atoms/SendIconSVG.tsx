@@ -1,8 +1,6 @@
 import React, { ReactElement } from 'react'
-interface SVGIconInterface {
-    size?: number,
-    svgClass?: string
-}
+import { SVGIconInterface } from '../../utils/interfaces';
+
 const SendIconSVG: React.FC<SVGIconInterface> = ({ size = 16, svgClass }: SVGIconInterface): ReactElement => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" className={`${svgClass} bi bi-send mx-auto`} viewBox="0 0 16 16">
