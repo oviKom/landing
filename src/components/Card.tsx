@@ -1,5 +1,5 @@
 import classNames from 'classnames'
-import React, { ReactElement } from 'react'
+import React, { ReactElement, Ref, forwardRef } from 'react'
 
 interface CardPropsInterface {
     icon?: ReactElement | undefined
@@ -9,9 +9,9 @@ interface CardPropsInterface {
     className?: string | undefined | boolean
 }
 
-const Card: React.FC<CardPropsInterface> = ({
+const Card: React.FC<CardPropsInterface> = forwardRef(({
     icon, title, description, variant = 'default', className
-}: CardPropsInterface): ReactElement => {
+}: CardPropsInterface, ref: Ref<HTMLDivElement>): ReactElement => {
     const titleColor = classNames({
         'text-card-gray': variant === 'default',
         'text-black': variant === 'primary',
@@ -27,7 +27,7 @@ const Card: React.FC<CardPropsInterface> = ({
         'text-custom-gray': variant === 'primary',
     });
     return (
-        <div className={`inline-flex flex-col max-w-[400px] lg:max-w-[350px] text-center place-self-center ${className}`}>
+        <div ref={ref} className={`inline-flex flex-col max-w-[400px] lg:max-w-[350px] text-center place-self-center ${className}`}>
             {icon &&
                 <div className={`${iconBackgroundClass} rounded-full w-14 h-14 flex justify-center items-center self-center mb-10`}>
                     {icon}
@@ -42,6 +42,6 @@ const Card: React.FC<CardPropsInterface> = ({
             </div>
         </div>
     )
-}
+});
 
 export default Card

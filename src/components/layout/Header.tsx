@@ -5,9 +5,12 @@ import MobileMenu from "../MobileMenu";
 import Navbar from "./Navbar";
 import { menuElements } from "../../conf/MenuElements";
 
+import { motion as m } from "framer-motion";
+
 const Header: React.FC = (): ReactElement => {
     return (
-        <div className={'header relative default-padding'}>
+        <m.div className={'header relative default-padding'} initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }} viewport={{ amount: 0.1, margin: '50px' }}>
             <div>LOGO</div>
             <Navbar menuElements={menuElements} className={'hidden lg:block'} ulClassName={'navbar'} />
             <div className={'hidden lg:flex flex-row gap-4'}>
@@ -15,7 +18,7 @@ const Header: React.FC = (): ReactElement => {
                 <Button text={'Bejelentkezés'} variant={'white'} disabled={true} />
             </div>
             <MobileMenu />
-        </div>
+        </m.div>
     );
 };
 

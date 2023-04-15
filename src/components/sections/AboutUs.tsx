@@ -1,6 +1,8 @@
 import { ReactElement } from "react"
 import { TEAM } from "../../conf/Team"
 
+import { motion as m } from "framer-motion";
+
 const AboutUs: React.FC = (): ReactElement => {
     return (
         <>
