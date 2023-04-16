@@ -13,7 +13,7 @@
 .page-wrapper {
     transition: all 400m s ease-in-out;
 
-    @apply font-body w-full h-full bg-white relative left-0;
+    @apply font-body w-full h-full bg-white relative left-0 overflow-x-hidden;
 }
 
 .default-padding {
