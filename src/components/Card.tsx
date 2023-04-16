@@ -1,5 +1,7 @@
 import classNames from 'classnames'
-import React, { ReactElement, Ref, forwardRef } from 'react'
+import React, { ReactElement, useRef } from 'react'
+import { motion as m, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 interface CardPropsInterface {
     icon?: ReactElement | undefined
@@ -9,9 +11,24 @@ interface CardPropsInterface {
     className?: string | undefined | boolean
 }
 
-const Card: React.FC<CardPropsInterface> = forwardRef(({
+const Card: React.FC<CardPropsInterface> = ({
     icon, title, description, variant = 'default', className
-}: CardPropsInterface, ref: Ref<HTMLDivElement>): ReactElement => {
+}: CardPropsInterface): ReactElement => {
+    const { ref, inView } = useInView();
+
+    const animationControls = useAnimation();
+    const prevInViewRef = useRef(false);
+
+    if (inView !== prevInViewRef.current) {
+        /*if (inView) {
+            animationControls.start("visible");
+        } else {
+            animationControls.start("hidden");
+        }*/
+        prevInViewRef.current = inView;
+    }
+
+
     const titleColor = classNames({
         'text-card-gray': variant === 'default',
         'text-black': variant === 'primary',
@@ -27,7 +44,11 @@ const Card: React.FC<CardPropsInterface> = forwardRef(({
         'text-custom-gray': variant === 'primary',
     });
     return (
-        <div ref={ref} className={`inline-flex flex-col max-w-[400px] lg:max-w-[350px] text-center place-self-center ${className}`}>
+        <m.div
+            ref={ref}
+            className={`inline-flex flex-col max-w-[400px] lg:max-w-[350px] text-center place-self-center ${className}`}
+            animate={prevInViewRef.current ? { scale: 1 } : { scale: 0 }}
+        >
             {icon &&
                 <div className={`${iconBackgroundClass} rounded-full w-14 h-14 flex justify-center items-center self-center mb-10`}>
                     {icon}
@@ -40,8 +61,8 @@ const Card: React.FC<CardPropsInterface> = forwardRef(({
             <div className={`${descriptionColor} font-semibold`}>
                 {description}
             </div>
-        </div>
+        </m.div>
     )
-});
+};
 
 export default Card

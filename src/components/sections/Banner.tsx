@@ -14,7 +14,7 @@ const Banner: React.FC = (): ReactElement => {
                     whileInView={{ opacity: 1 }}
                     className={'text-[40px] md:text-[50px] lg:text-[60px] font-bold text-center text-white leading-[68px] mb-6'}
                 >
-                    Pedagógus és <br />szülő közös platformja.
+                    Szülő és <br />pedagógus közös platformja.
                 </m.h1>
                 <m.div
                     initial={{ opacity: 0, y: 50 }}
