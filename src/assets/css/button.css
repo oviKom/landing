@@ -22,6 +22,10 @@
     @apply bg-white text-black hover:bg-gray-100 disabled:bg-gray-100;
 }
 
+.button.secondary {
+    @apply bg-secondary text-black hover:bg-secondary-hover disabled:bg-secondary-hover;
+}
+
 .button.disabled {
     @apply disabled:cursor-not-allowed;
 }

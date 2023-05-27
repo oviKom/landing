@@ -13,7 +13,7 @@ const Newsletter: React.FC = (): ReactElement => {
                 initial={{ opacity: 0, y: 100 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className={'bg-white rounded-2xl flex flex-col xl:flex-row p-12 md:p-24'}
+                className={'bg-secondary rounded-100 flex flex-col xl:flex-row p-12 md:p-24 w-full max-w-[1000px] mx-auto'}
             >
                 <m.div
                     initial={{ opacity: 0, x: -50 }}

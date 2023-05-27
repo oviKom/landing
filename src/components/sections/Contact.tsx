@@ -13,7 +13,7 @@ const Contact: React.FC = (): ReactElement => {
                 initial={{ opacity: 0, y: 100 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className={'bg-white rounded-2xl flex flex-col xl:flex-row p-12 md:p-24'}
+                className={'bg-secondary rounded-100 flex flex-col xl:flex-row p-12 md:p-24 w-full max-w-[1000px] mx-auto'}
             >
                 <m.div
                     initial={{ opacity: 0, x: -50 }}
@@ -28,7 +28,7 @@ const Contact: React.FC = (): ReactElement => {
                     className={'w-full xl:w-[50%] flex flex-col place-self-end ml-auto'}
                 >
                     <h2 className={'text-[35px] font-bold pb-4'}>Írj nekünk!</h2>
-                    <p className={'font-semibold mb-14'}>
+                    <p className={'font-semibold mb-14 text-custom-gray'}>
                         További információkért bátran keress minket üzenetben és készséggel válaszolunk minden kérdésedre.
                     </p>
                     <div className={'flex flex-row justify-between gap-4'}>
