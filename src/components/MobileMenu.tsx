@@ -38,7 +38,6 @@ const MobileMenu: React.FC = () => {
 
                         <div className={'inline-flex flex-col absolute bottom-40 gap-10 place-self-center'}>
                             <Button text={'Írj nekünk'} onClick={() => scrollToSection(undefined, 'contact-section')} />
-                            <Button text={'Bejelentkezés'} variant={'white'} disabled={true} />
                         </div>
                     </m.div>
                 )}

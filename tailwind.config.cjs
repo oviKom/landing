@@ -8,17 +8,24 @@ module.exports = {
         extend: {
             colors: {
                 primary: {
-                    DEFAULT: '#4525F2',
-                    hover: darken('#4525F2', 0.25),
+                    DEFAULT: '#6224FA',
+                    hover: darken('#6224FA', 0.25),
+                    darker: '#4525F2'
                 },
-                black: '#1C2126',
+                secondary: {
+                    DEFAULT: '#BEFD69',
+                    hover: darken('#BEFD69', 0.25),
+
+                },
+                black: '#000000',
                 'custom-gray': '#737373',
                 card: {
                     gray: '#F2F4F8',
                     purple: '#B4A8F9'
                 },
                 footer: {
-                    gray: '#D7DCDE'
+                    gray: '#D7DCDE',
+                    purple: '#4525F2'
                 }
             },
             fontFamily: {

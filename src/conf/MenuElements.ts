@@ -6,16 +6,16 @@ export const menuElements: MenuElementInterface[] = [
         title: 'Célunk',
     },
     {
-        id: 'function',
+        id: 'functions',
         title: 'Funkciók',
     },
     {
         id: 'about-us',
-        title: 'Rólunk',
+        title: 'Csapat',
     },
     {
-        id: 'contact',
-        title: 'Kapcsolat',
+        id: 'choose-us',
+        title: 'Miért mi?',
     },
 
 ];

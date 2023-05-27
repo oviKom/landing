@@ -7,6 +7,6 @@
 }
 
 .mobile-navbar-wrapper {
-    @apply fixed top-0 right-0 bg-white w-[250px] h-screen z-30 shadow-2xl;
+    @apply fixed top-0 right-0 w-[250px] h-screen z-30 shadow-2xl bg-secondary;
 }
 

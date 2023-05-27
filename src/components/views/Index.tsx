@@ -16,13 +16,19 @@ const Index: React.FC = (): ReactElement => {
             <Banner />
             <Goal />
             <Functions />
+            <FullWidthBannerSeparator
+                text={
+                    <h3 className={'text-[30px] md:text-[40px] lg:text-[46px] font-bold z-20 text-center'}>
+                        A csoport ajtóra helyezett elavult
+                        <span className={'bubble-white'}>cetlik</span><br />
+                        <span className={'bubble-white'}>kiváltása</span>
+                        a <span className={'circle-purple'}>technika</span> adta lehetőségekkel.
+                    </h3>
+                }
+            />
             <AboutUs />
             <ChooseUs />
             <Newsletter />
-            <FullWidthBannerSeparator
-                image={bannerImage}
-                text={<span>Intézd a gyermek óvodai ügyeit,<br />pár kattintással bárhonnan.</span>}
-            />
             <Contact />
             <Footer />
         </>

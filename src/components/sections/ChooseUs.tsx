@@ -5,22 +5,30 @@ import Card from "../Card"
 import { motion as m } from 'framer-motion';
 
 const ChooseUs: React.FC = (): ReactElement => {
+    const indexBasedClassName = (index: number): string => {
+        const roundMap = [
+            'lg:rounded-tr-none',
+            'lg:rounded-t-none',
+            'lg:rounded-tl-none',
+        ]
+        return `rounded-[72px] ${roundMap[index]} bg-white h-[500px] px-[30px] pt-[50px] w-full !max-w-[400px]`;
+    }
     return (
-        <section className={'flex flex-col pt-[72px] pb-[144px] default-padding'}>
+        <section className={'flex flex-col py-[150px] default-padding'} id='choose-us-section'>
             <div className={'text-center flex flex-col justify-center items-center w-full'}>
                 <m.h2
                     initial={{ opacity: 0, y: 100 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    className={'section-title mb-16'}>
-                    Miért minket válassz?
+                    className={'section-title text-white'}>
+                    Miért a Buborékom?
                 </m.h2>
-                <div className={'grid lg:grid-cols-2 xl:grid-cols-3 gap-x-6 gap-y-20'}>
+                <div className={'grid gap-20 lg:grid-cols-3 lg:gap-0 mt-[180px] w-full'}>
                     {SOLUTIONS.map((solution, index) => <Card
-                        className={index === SOLUTIONS.length - 1 && SOLUTIONS.length % 2 !== 0 ? 'col-span-1 lg:col-span-2 xl:col-span-1' : ''}
+                        className={indexBasedClassName(index)}
                         title={solution.title}
                         description={solution.description}
                         icon={solution.icon}
-                        variant={'primary'} />
+                        variant={'white'} />
                     )}
                 </div>
             </div>

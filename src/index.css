@@ -13,7 +13,7 @@
 .page-wrapper {
     transition: all 400m s ease-in-out;
 
-    @apply font-body w-full h-full bg-white relative left-0 overflow-x-hidden;
+    @apply font-body w-full h-full relative left-0 overflow-x-hidden bg-primary;
 }
 
 .default-padding {
@@ -25,5 +25,21 @@
 }
 
 .section-title {
-    @apply text-black text-[40px] sm:text-[45px] lg:text-[50px] xl:text-[52px] font-bold text-center;
+    @apply text-[40px] sm:text-[45px] lg:text-[50px] xl:text-[52px] font-bold text-center;
+}
+
+.bubble-secondary {
+    @apply bg-secondary text-black py-[2px] px-[10px] rounded-full;
+}
+
+.circle-white {
+    @apply py-[2px] px-[20px] border-2 border-white rounded-full;
+}
+
+.bubble-white {
+    @apply bg-white text-black py-[2px] px-[10px] rounded-full;
+}
+
+.circle-purple {
+    @apply py-[2px] px-[20px] border-2 border-[#C0B7E6] rounded-full;
 }

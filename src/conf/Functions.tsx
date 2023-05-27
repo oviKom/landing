@@ -1,4 +1,4 @@
-import { BellIcon, CalendarDaysIcon, ChatBubbleLeftRightIcon, ClockIcon, DocumentIcon, PencilSquareIcon, PhotoIcon, TableCellsIcon, TruckIcon } from '@heroicons/react/24/outline'
+import { ArrowTrendingUpIcon, BellIcon, CalendarDaysIcon, ChatBubbleLeftRightIcon, ClockIcon, CursorArrowRaysIcon, DocumentIcon, PencilSquareIcon, PhotoIcon, TableCellsIcon, TruckIcon } from '@heroicons/react/24/outline'
 const iconClassName = 'w-7 h-7 text-black';
 export const FUNCTIONS = [
     {
@@ -37,13 +37,13 @@ export const FUNCTIONS = [
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
-        icon: <PencilSquareIcon className={iconClassName} />,
-        title: "Igényfelmérések",
+        icon: <ArrowTrendingUpIcon className={iconClassName} />,
+        title: "Hiányzási/mulasztási napló",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
-        icon: <TruckIcon className={iconClassName} />,
-        title: "Ételrendelés",
+        icon: <CursorArrowRaysIcon className={iconClassName} />,
+        title: "Szakvélemény kiállítás",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
 ]

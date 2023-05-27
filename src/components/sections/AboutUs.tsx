@@ -6,37 +6,32 @@ import { motion as m } from "framer-motion";
 const AboutUs: React.FC = (): ReactElement => {
     return (
         <>
-            <section className={'flex flex-col pb-0 lg:pb-[72px] py-[72px] default-padding'} id='about-us-section'>
-                <div className={'text-center flex flex-col justify-center items-center w-full'}>
-                    <m.h2
-                        initial={{ opacity: 0, y: 100 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        className={'section-title mb-8 lg:mb-16'}
-                    >
-                        Csapatunk
-                    </m.h2>
-                    <m.div
-                        initial={{ opacity: 0, y: -100 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        className={'text-custom-gray font-semibold text-center'}
-                    >
-                        Lelkes start upperek vagyunk. Színes társaság, <br />
-                        a legkülönbözőbb motivációkkal és tudással. A cél azonban közös.
-                    </m.div>
-                </div>
-            </section>
+            <section className={'flex flex-col py-[150px] default-padding text-white'} id='about-us-section'>
+                <m.h2
+                    initial={{ opacity: 0, y: 100 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    className={'section-title text-white'}
+                >
+                    Csapatunk
+                </m.h2>
 
-            <section className={'flex flex-col pt-[72px] px-0 2xl:px-[300px]'}>
-                <div className={'grid px-16 sm:grid-cols-2 lg:grid-cols-3'}>
+                <div className={'grid md:grid-cols-2 lg:grid-cols-4 mt-[150px] gap-y-10'}>
                     {TEAM.map((member, index) =>
                         <m.div
                             initial={{ opacity: 0 }}
                             whileInView={{ opacity: 1 }}
                             viewport={{ once: true, amount: 0.1 }}
-                            className={`${index === 0 ? 'row-span-2' : ''} relative flex justify-center items-center`}
+                            className={`relative flex justify-center items-center flex-col`}
                         >
-                            <img className={'z-10 w-full h-full'} src={member.image} />
-                            <div className={'absolute z-20 text-white font-bold bottom-6'}>{member.name}</div>
+                            {member.image ?
+                                <img className={'z-10 w-full h-full'} src={member.image} />
+                                :
+                                <div className={'w-fit h-fit p-3 bg-white text-primary flex justify-center items-center rounded-full'}>
+                                    {member.icon}
+                                </div>
+                            }
+                            <div className={'text-[#BEFD69] font-bold mt-[70px]'}>{member.name}</div>
+                            <div className={'text-white text-xs mt-[15px]'}>{member.role}</div>
                         </m.div>
                     )}
                 </div>

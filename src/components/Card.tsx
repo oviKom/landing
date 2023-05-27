@@ -6,13 +6,13 @@ import { useInView } from 'react-intersection-observer';
 interface CardPropsInterface {
     icon?: ReactElement | undefined
     title: string,
-    description: string,
-    variant?: 'default' | 'primary'
+    description?: string,
+    variant?: 'transparent' | 'white'
     className?: string | undefined | boolean
 }
 
 const Card: React.FC<CardPropsInterface> = ({
-    icon, title, description, variant = 'default', className
+    icon, title, description, variant = 'transparent', className
 }: CardPropsInterface): ReactElement => {
     const { ref, inView } = useInView();
 
@@ -30,19 +30,19 @@ const Card: React.FC<CardPropsInterface> = ({
 
 
     const titleColor = classNames({
-        'text-card-gray': variant === 'default',
-        'text-black': variant === 'primary',
+        'text-card-gray': variant === 'transparent',
+        'text-black': variant === 'white',
     });
     const iconBackgroundClass = classNames({
-        'bg-card-gray': variant === 'default',
-        'bg-primary': variant === 'primary',
-        'text-black': variant === 'default',
-        'text-white': variant === 'primary',
+        'bg-secondary': variant === 'transparent',
+        'bg-primary-darker': variant === 'white',
+        'text-black': variant === 'transparent',
+        'text-white': variant === 'white',
     });
-    const descriptionColor = classNames({
-        'text-card-purple ': variant === 'default',
-        'text-custom-gray': variant === 'primary',
-    });
+    const descriptionColor = classNames(
+        'text-custom-gray',
+
+    );
     return (
         <m.div
             ref={ref}

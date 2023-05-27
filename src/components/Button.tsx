@@ -3,7 +3,7 @@ import classNames from 'classnames';
 
 interface ButtonInterface {
     text: string | ReactElement,
-    variant?: 'primary' | 'white',
+    variant?: 'primary' | 'white' | 'secondary',
     size?: 'fixed' | 'circle' | 'full' | 'wrap',
     onClick?: Function | undefined,
     className?: string,
@@ -19,6 +19,7 @@ const Button: React.FC<ButtonInterface> = ({
         [`size-${size}`]: size,
         'primary': variant === 'primary',
         'white': variant === 'white',
+        'secondary': variant === 'secondary',
         'disabled': disabled
     });
     return (
